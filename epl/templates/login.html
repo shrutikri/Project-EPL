@@ -1,0 +1,182 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>EPL</title>
+    <link type="image/x-icon" href="{% static 'img/favicon.png' %}" rel="icon">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body class="account-page">
+	<div class="main-wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg header-nav">
+                <div class="navbar-header">
+                    <a id="mobile_btn" href="javascript:void(0);">
+                        <span class="bar-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                    <a href="home.html" class="navbar-brand logo">
+                        <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="Logo">
+                    </a>
+                </div>
+				<ul class="nav header-navbar-rht">
+					<li class="nav-item">
+						<a class="nav-link header-login" href="login.html" style=border-color:#1663a6;color:#1663a6;>Login / Signup </a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+<div class="content">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-8 offset-md-2">
+
+				<div class="account-content">
+					<div class="row align-items-center justify-content-center">
+						<div class="col-md-7 col-lg-6 login-left">
+							<img src="{% static 'img/login-banner.jpg' %}" class="img-fluid" alt="EPL Login">
+						</div>
+						<div class="col-md-12 col-lg-6 login-right">
+							<div class="login-header">
+								<h3 style="color:#1663a6;">Login</h3>
+							</div>
+							<form action="login.html" method="post">
+								{% csrf_token %}
+									<div class="form-group form-focus">
+										<input type="text" id = "username" name = "username" class="form-control floating">
+										<label class="focus-label">Username</label>
+									</div>
+									<div class="form-group form-focus">
+										<input type="password" id = "password" name = "password" class="form-control floating">
+										<label class="focus-label">Password</label>
+									</div>
+									<div class="text-end">
+										<a class="forgot-link" href="forgot-password.html">Forgot Password ?</a>
+									</div>
+									<button class="btn btn-primary w-100 btn-lg login-btn" type="submit" style=background-color:#1663a6;>Login</button>
+									<div class="login-or">
+										<span class="or-line"></span>
+										<span class="span-or">or</span>
+									</div>
+									<div class="row form-row social-login">
+										<div class="col-6">
+											<a href="https://en-gb.facebook.com/login/" class="btn btn-facebook w-100"><i class="fab fa-facebook-f me-1"></i> Login</a>
+										</div>
+										<div class="col-6">
+											<a href="https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin" class="btn btn-google w-100"><i class="fab fa-google me-1"></i> Login</a>
+										</div>
+									</div>
+									<div class="text-center dont-have">Don’t have an account? <a href="register.html" style="color: #1663a6;">Register</a></div>
+							</form>
+							<div>
+								{% for message in messages %}
+								<h3 style="color:black;" style="font-size:small">&nbsp;{{message}}</h3>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+<footer class="footer">
+
+	<div class="footer-top">
+	<div class="container-fluid">
+	<div class="row">
+	<div class="col-lg-3 col-md-6">
+	
+	<div class="footer-widget footer-about">
+	<div class="footer-logo">
+	<img src="{% static 'img/footer-logo.png' %}" alt="logo">
+	</div>
+	<div class="footer-about-content">
+	<p>Website designed to decrease energy consumption and easing the related process for our users. </p>
+	<div class="social-icon">
+	<ul>
+	<li>
+	<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+	</li>
+	<li>
+	<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	<div class="col-lg-3 col-md-6">
+	
+	</div>
+	<div class="col-lg-3 col-md-6">
+	</div>
+	<div class="col-lg-3 col-md-6">
+	
+	<div class="footer-widget footer-contact">
+	<h2 class="footer-title">Contact Us</h2>
+	<div class="footer-contact-info">
+	<div class="footer-address">
+	<span><i class="fas fa-map-marker-alt"></i></span>
+	<p> Mohali, Chandigarh </p>
+	</div>
+	<div class="footer-contact-info">
+	<i class="fas fa-envelope"></i>
+	<a> &nbsp; &nbsp;eplimiter@gmail.com </a> 
+	</p>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	<div class="footer-bottom">
+	<div class="container-fluid">
+	<div class="copyright">
+	<div class="row">
+	
+	<div class="col-md-6 col-lg-6">
+	<div class="copyright-text">
+	<p class="mb-0">&copy; 2021 EPL. All rights reserved.</p>
+	</div>
+	</div>
+	
+	<div class="col-md-6 col-lg-6">
+	<div class="copyright-menu">
+	<ul class="policy-menu">
+	<li><a href="term-condition.html">Terms and Conditions</a></li>
+	<li><a href="privacy-policy.html">Policy</a></li>
+	</ul>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	</footer>
+	</div>
+	
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'js/slick.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+	</body>
+	</html>

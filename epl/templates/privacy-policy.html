@@ -1,0 +1,203 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>EPL</title>
+    <link type="image/x-icon" href="{% static 'img/favicon.png' %}" rel="icon">
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/fontawesome.min.css' %}">
+    <link rel="stylesheet" href="{% static 'plugins/fontawesome/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+
+<body>
+    <div class="main-wrapper">
+        <header class="header">
+            <nav class="navbar navbar-expand-lg header-nav">
+                <div class="navbar-header">
+                    <a id="mobile_btn" href="javascript:void(0);">
+                        <span class="bar-icon">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </span>
+                    </a>
+                    <a href="home.html" class="navbar-brand logo">
+                        <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="Logo">
+                    </a>
+                </div>
+                <div class="main-menu-wrapper">
+                    <div class="menu-header">
+                        <a href="home.html" class="menu-logo">
+                            <img src="{% static 'img/logo.png' %}" class="img-fluid" alt="Logo">
+                        </a>
+                        <a id="menu_close" class="menu-close" href="javascript:void(0);">
+                            <i class="fas fa-times"></i>
+                        </a>
+                    </div>
+                    <ul class="main-nav">
+                        <li class="has-submenu">
+                            <a href="#">Bill Payment <i class="fas fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                                <li><a href="billing.html">Online Payment</a></li>
+                                <li><a href="invoices.html">Invoices</a></li>
+                            </ul>
+                        </li>
+                        <li class="has-submenu">
+                            <a href="#">Current Power Usage <i class="fas fa-chevron-down"></i></a>
+                            <ul class="submenu">
+                            <li><a href="appliances.html">Appliances</a></li>
+                            <li><a href="units.html">Units</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="has-submenu">
+                        <a href="#">Home <i class="fas fa-chevron-down"></i></a>
+                        <ul class="submenu">
+                            <li><a href="home.html">Home Page</a></li>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="profile-settings.html">Profile Settings</a></li>
+                            <li><a href="change-password.html">Change Password</a></li>
+                        </ul>
+                    </li>
+                
+                </ul>
+            </div>
+            <ul class="nav header-navbar-rht">
+                <li class="nav-item">
+                    <a class="nav-link header-login" href="login.html" style=border-color:#1663a6;color:#1663a6;>Login / Signup </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+
+<div class="breadcrumb-bar">
+<div class="container-fluid">
+<div class="row align-items-center">
+<div class="col-md-12 col-12">
+<nav aria-label="breadcrumb" class="page-breadcrumb">
+<ol class="breadcrumb">
+</ol>
+</nav>
+<h2 class="breadcrumb-title">Privacy Policy</h2>
+</div>
+</div>
+</div>
+</div>
+
+
+<div class="content">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="terms-content">
+<div class="terms-text">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque vel sodales mauris. Nunc accumsan mi massa, ut maximus magna ultricies et:</p>
+<ol>
+<li>Integer quam odio, ullamcorper id diam in, accumsan convallis libero. Duis at lacinia urna.</li>
+<li>Mauris eget turpis sit amet purus pulvinar facilisis at sed lacus.</li>
+<li>Quisque malesuada volutpat orci, accumsan scelerisque lorem pulvinar vitae.</li>
+<li>Vestibulum sit amet sem aliquam, vestibulum nisi sed, sodales libero.</li>
+</ol>
+</div>
+
+</div>
+
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<footer class="footer">
+
+	<div class="footer-top">
+	<div class="container-fluid">
+	<div class="row">
+	<div class="col-lg-3 col-md-6">
+	
+	<div class="footer-widget footer-about">
+	<div class="footer-logo">
+	<img src="{% static 'img/footer-logo.png' %}" alt="logo">
+	</div>
+	<div class="footer-about-content">
+	<p>Website designed to decrease energy consumption and easing the related process for our users. </p>
+	<div class="social-icon">
+	<ul>
+	<li>
+	<a href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+	</li>
+	<li>
+	<a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+	</li>
+	</ul>
+	</div>
+	</div>
+	</div>
+	
+	</div>
+	<div class="col-lg-3 col-md-6">
+	
+	</div>
+	<div class="col-lg-3 col-md-6">
+	</div>
+	<div class="col-lg-3 col-md-6">
+	
+	<div class="footer-widget footer-contact">
+	<h2 class="footer-title">Contact Us</h2>
+	<div class="footer-contact-info">
+	<div class="footer-address">
+	<span><i class="fas fa-map-marker-alt"></i></span>
+	<p> Mohali, Chandigarh </p>
+	</div>
+	<div class="footer-contact-info">
+	<i class="fas fa-envelope"></i>
+	<a> &nbsp;&nbsp;eplimiter@gmail.com </a> 
+	</p>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	
+	<div class="footer-bottom">
+	<div class="container-fluid">
+	<div class="copyright">
+	<div class="row">
+	
+	<div class="col-md-6 col-lg-6">
+	<div class="copyright-text">
+	<p class="mb-0">&copy; 2021 EPL. All rights reserved.</p>
+	</div>
+	</div>
+	
+	<div class="col-md-6 col-lg-6">
+	<div class="copyright-menu">
+	<ul class="policy-menu">
+	<li><a href="term-condition.html">Terms and Conditions</a></li>
+	<li><a href="privacy-policy.html">Policy</a></li>
+	</ul>
+	</div>
+	</div>
+	
+	</div>
+	</div>
+	</div>
+	</div>
+	
+	</footer>
+	</div>
+	
+	<script data-cfasync="false" src="../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="{% static 'js/jquery-3.6.0.min.js' %}"></script>
+	<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+	<script src="{% static 'js/slick.js' %}"></script>
+	<script src="{% static 'js/script.js' %}"></script>
+	</body>
+	</html>
